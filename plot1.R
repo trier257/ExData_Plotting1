@@ -20,7 +20,7 @@ eDate <- strptime("03/02/2007 00:00:00", format="%d/%m/%Y %H:%M:%S")
 gapData <- subset(allData, DateTime >= bDate & DateTime < eDate, select=c(3,10))
 
 # Open the PNG device with the required 480x480
-png(file="plot1.png", bg="transparent", width=480, height=480)
+png(file="plot1.png", bg="white", width=480, height=480)
 # Create a histogram to match the assignment's plot 1
 hist(gapData$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red")
 dev.off()
