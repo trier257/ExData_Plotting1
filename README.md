@@ -1,4 +1,21 @@
-## Project 1 -- 4 Plots
+## Project 1: 4 Plots
+4 Plots in 4 R files with 4 PNGs.
+
+### Before Running the Code
+* Before running this code, the project datafile needs to be downloaded and unzipped into the
+current working directory.
+
+### Plot 1
+This plot is created with the R script plot1.R. This script will read in the entire datafile,
+combine dates and times into one date-time field and then subset the dataset to just
+the dates of interest, namely Feb. 1 - 2, 2007. The a histogram is created with the
+Global Active Power column and saved to a 480x480 PNG file.
+
+### Plot 2
+This plot is created with plot2.R, which uses the same reading, date handling, and subsetting
+code as plot1.R. Here a line plot is created by setting type="l" in the plot command. The
+assignment plot example has no title and no X-axis label, which is replicated in this plot.
+
 
 ## Introductions For Assignment
 These are the original assignment instructions for project 1, kept for reference purposes.
