@@ -1,4 +1,7 @@
-## Introduction
+## Project 1 -- 4 Plots
+
+## Introductions For Assignment
+These are the original assignment instructions for project 1, kept for reference purposes.
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
