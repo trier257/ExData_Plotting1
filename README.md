@@ -11,8 +11,11 @@ and source the code file (R console).
 ### Plot 1
 This plot is created with the R script plot1.R. This script will read in the entire datafile,
 combine dates and times into one date-time field and then subset the dataset to just
-the dates of interest, namely Feb. 1 - 2, 2007. The a histogram is created with the
-Global Active Power column and saved to a 480x480 PNG file. The background of this plot
+the dates of interest, namely Feb. 1 - 2, 2007. Doing this takes a few moments but the
+memory used is easily within the capacity of my PC.
+
+The histogram is created with the Global Active Power column and 
+saved to a 480x480 PNG file. The background of this plot
 and the others is kept transparent to match the professor's example.
 
 ### Plot 2
@@ -26,6 +29,21 @@ subsetting as plot1.R. A single plot with the 3 sub-metering data lines
 is created by adding lines to the starting
 plot with the first line. This plot also has no title or x-axis label.
 
+### Plot 4
+plot4.R creates this plot-of-4-plots. The upper left and lower left are essentially
+the same as plots 2 and 3, with some minor differences. The upper left plot has a slightly
+different Y-axis label from plot 2. The lower left does not have a box around the
+legend like plot 3. 
+
+The other 2 plots are new for plot 4. The upper right plots Voltage against datetime;
+the lower right has Global_reactive_power against datetime. The x- and y- labels are 
+just the column names; this matches the professor's figure.
+
+The lines in these plots look thicker than the professor's plots. I tried making the
+lines thinner with lwd=(0.8) (and other numbers) but it appears that on my PC, line
+multipliers less than 1 are ignored as setting lwd less than 1 made no change to the
+line thickness.
+ 
 
 ## Introductions For Assignment
 These are the original assignment instructions for project 1, kept for reference purposes. The
@@ -65,10 +83,6 @@ web site</a>:
 </ol>
 
 ## Loading the data
-
-
-
-
 
 When loading the dataset into R, please consider the following:
 
