@@ -31,7 +31,7 @@ pcolors = c("black", "red", "blue")
 # Note the background of the professor's figure is transparent.
 png(file="plot3.png", bg="transparent", width=480, height=480)
 # Now create the plot. The first color is black, but for completeness specify it explicitly
-with(subData, plot(DateTime, Sub_metering_1, type="l", col=pcolors[1], ylab="Energy sub metering"))
+with(subData, plot(DateTime, Sub_metering_1, type="l", col=pcolors[1], ylab="Energy sub metering", xlab=""))
 with(subData, lines(DateTime, Sub_metering_2, col=pcolors[2]))
 with(subData, lines(DateTime, Sub_metering_3, col=pcolors[3]))
 # Helpful: http://www.r-bloggers.com/adding-a-legend-to-a-plot/
